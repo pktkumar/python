@@ -18,20 +18,14 @@ def test():
 
 
 def testTwo():
-    print("testTwo .....")
-
-# a Python object (dict):
-x = {
+    x = {
     "name": "John",
     "age": 30,
     "city": "New York"
 }
+    y = json.dumps(x)
+    print(y)
 
-# convert into JSON:
-y = json.dumps(x)
-
-# the result is a JSON string:
-print(y)
 def user_input():
     name = input("What is your name? ")
     print("Hello, " + name + "!")
@@ -41,8 +35,6 @@ def user_input():
 
 
 user_input()
-
-
 test()
 testTwo()
 
